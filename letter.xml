@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<naglowek>
+		<data>February 3, 2003</data>
+			
+		<adres>
+			<nazwa>American Library Association</nazwa>
+			<nr>15</nr>
+			<ulica>Huron Street</ulica>
+			<miasto>Chicago,</miasto> 
+			<kod>IL 12304</kod>
+		</adres>
+	</naglowek>
+	<tresc>
+		<zwrot>To Whom It May Concern:</zwrot>
+		<trwlasciwa>
+			It has come to my attention that the Association no longer wants to spend money on posters of famous people advocating reading. What is wrong with you guys! Don't you know that reading is FUNdamental? These posters really get me and my patrons going. I thought they were great.
+		</trwlasciwa>
+	
+
+		<ps>Please consider re-instating the posters.</ps>
+	</tresc>
+	<podpis>
+		<grzecznosciowy>Sincerely,</grzecznosciowy> 
+		<imienazw>B. Ig Reeder</imienazw>
+	</podpis>
+</list>
