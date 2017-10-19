@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wizyt>
+	<imie>Piotr Pieprzyk</imie>
+	<company>Twoj stary &amp; Twoj stary &#174; </company>
+	<phone type="mobile">123 456 123 </phone>
+	<phone type="home">123 456 123 </phone>
+	<phone type="work">123 456 123 </phone>	
+	<email>piopr@gmail.com</email>
+<!--	<adres>
+		<ulica>Jana Dzbana 111</ulica>
+		<kod>32-320</kod>
+	</adres>
+	<adres type="ulica">Jana Dzbana 111</adres>
+	<adres type="kod">32-320</adres>-->
+	<adres>
+		<ulica>Jana Dzbana</ulica>
+		<nrdomu>2137</nrdomu>
+		<kod>32-320</kod>
+		<city>Wadowice</city>
+		<kraj>Bolzga</kraj>
+	</adres>
+
+</wizyt>

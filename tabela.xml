@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pets>
+	<pet>
+		<imie>Tilly</imie>
+		<wiek>14</wiek>
+		<rodzaj>cat</rodzaj>
+		<kolor>silver</kolor>
+	</pet>
+	
+	<pet>
+		<imie>Amanda</imie>
+		<wiek>10</wiek>
+		<rodzaj>dog</rodzaj>
+		<kolor>brown</kolor>
+	</pet>
+	
+	<pet>
+		<imie>Jack</imie>
+		<wiek>3</wiek>
+		<rodzaj>cat</rodzaj>
+		<kolor>black</kolor>
+	</pet>
+	
+	<pet>
+		<imie>Blake</imie>
+		<wiek>12</wiek>
+		<rodzaj>dog</rodzaj>
+		<kolor>blue</kolor>
+	</pet>
+	
+	<pet>
+		<imie>Loosey</imie>
+		<wiek>1</wiek>
+		<rodzaj>cat</rodzaj>
+		<kolor>brown</kolor>
+	</pet>
+	
+	<pet>
+		<imie>Stop</imie>
+		<wiek>5</wiek>
+		<rodzaj>pig</rodzaj>
+		<kolor>brown</kolor>
+	</pet>
+	
+
+
+</pets>
+
+
+
+
+
+
+
+
+
