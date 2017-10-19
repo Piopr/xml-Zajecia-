@@ -1,0 +1,20 @@
+<hotels>
+	<hotel>
+		<id> 1</id>
+		<name>Les Jardins du Marais</name>
+		<stars>3</stars>
+		<wypos>Internet</wypos>
+		<adres>74 rue Amelot, Paris, 75011</adres>
+		<distance>2</distance>
+		<dost>true</dost>
+	</hotel>
+	<hotel>
+		<id> 2</id>
+		<name>Golden Tulip Little Palace</name>
+		<stars>4</stars>
+		<wypos>Internet, gym, parking, restaurant</wypos>
+		<adres>4 rue Salomon De Caus, Paris, 75003</adres>
+		<distance>0.1</distance>
+		<dost>false</dost>
+	</hotel>
+</hotels>

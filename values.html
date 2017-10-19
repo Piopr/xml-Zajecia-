@@ -1,0 +1,20 @@
+<html>
+<head>
+	<meta charset="utf-8" /> 
+	<title>Ktore jest wieksze?</title>
+	<script>
+		function akcja(){
+		var x = parseInt(document.getElementById("x").value);
+		var y = parseInt(document.getElementById("y").value);
+		if (x>y) {
+		alert("Liczba "+x+" jest wieksza.") }else{
+		alert("Liczba "+y+" jest wieksza.")}
+		}		
+	</script>
+</head>
+<body>
+	<input id="x" />
+	<input id="y" />
+	<button id="wyslij" onclick="akcja()">Sprawdz</button>
+</body>
+</html>
