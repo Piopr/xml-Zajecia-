@@ -7,11 +7,18 @@
 			"<plane_name>Airbus A340</plane_name>" +
 			"<made_in>France</made_in>" +
 			"<seats>295</seats>" +
+			"</plane>";
+			text+= "<plane>" +
+			"<plane_name>Boeing 747</plane_name>" +
+			"<made_in>USA</made_in>" +
+			"<seats>587</seats>" +
 			"</plane></airplanes>";
 			parser = new DOMParser();
 			xmlDoc = parser.parseFromString(text,"text/xml");
 			
-			document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("plane_name")[0].childNodes[0].nodeValue;
+			document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("plane_name")[0].childNodes[0].nodeValue+ "</br>"+xmlDoc.getElementsByTagName("seats")[0].childNodes[0].nodeValue+"</br></br>";
+			document.getElementById("demo").innerHTML +=
+			xmlDoc.getElementsByTagName("plane_name")[1].childNodes[0].nodeValue+ "</br>"+xmlDoc.getElementsByTagName("seats")[1].childNodes[0].nodeValue+"</br></br>";
 		</script>
 	</body>
 </html> 
