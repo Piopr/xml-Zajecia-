@@ -18,6 +18,12 @@ xhttp.send();
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
 	var book = xmlDoc.getElementsByTagName("book");	
+	var node = xmlDoc.createElement("bestseller");
+	book[0].appendChild(node);
+	var serializer = new XMLSerializer();
+	var xmlString = serializer.serializeToString(xmlDoc);
+	alert(xmlString);
+	
 	for(var i=0; i<book.length; i++){
 	document.getElementById("demo").innerHTML+=
 	xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue+"</br>";
