@@ -1,0 +1,17 @@
+<html>
+	<body>
+	<p id="demo"></p>
+		<script>
+			var text, parser, xmlDoc;
+			text = "<airplanes><plane>" +
+			"<plane_name>Airbus A340</plane_name>" +
+			"<made_in>France</made_in>" +
+			"<seats>295</seats>" +
+			"</plane></airplanes>";
+			parser = new DOMParser();
+			xmlDoc = parser.parseFromString(text,"text/xml");
+			
+			document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("plane_name")[0].childNodes[0].nodeValue;
+		</script>
+	</body>
+</html> 
