@@ -2,24 +2,31 @@
 <head>
 <title>Costam</title>	
 <script type="text/javascript">
-	function showInfoElement(){
-	var element = document.getElementById("my");
-	var buffer ="Id is "+ element.id +" tag is "+element.tagName;
-	buffer+=", type is "+element.type;
-	alert(buffer);
+	function ShowInfoElement(){
+		var element = document.getElementById("my");
+		var buffer ="Id is "+ element.id +" tag is "+element.tagName;
+		buffer+=", type is "+element.type;
+		alert(buffer);
 	}
 	function showInfoDocument(){
-	var buffer = "Title"+ document.title+", URL: "+document.URL;
-	document.getElementById("my").value=buffer;
-	alert(buffer);
+		var element = document.getElementById("my");
+		var buffer = "Title"+ document.title+", URL: "+document.URL;
+		document.getElementById("my").value=buffer;
+		alert(buffer);
+	}
+	function sayHello(){
+		var element = document.getElementById("h1");
+		var buffer ="Id is "+ element.id +" tag is "+element.tagName;
+		element.innerHTML=buffer;
 	}
 </script>
 </head>
 <body>
 <p>
 	<p id="my">Atrybut id jest pomocny</p>
-		<button id="info_element" type="button" onclick="showInfoElement()">Pokaz info o elemencie</button>
+		<button id="info_element" type="button" onclick="ShowInfoElement()">Pokaz info o elemencie</button>
 		<button id="info_document" type="button" onclick="showInfoDocument()">Pokaz info o dokumencie</button>
-		
+	<h1 id="h1">Siemano nie bondziorno</h1>
+			<button id="info_document" type="button" onclick="sayHello()">Zamien h1</button>
 </body>
 </html>
