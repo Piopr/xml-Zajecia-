@@ -17,12 +17,15 @@ xhttp.send();
 
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
-	document.getElementById("demo").innerHTML=
-	xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-	
-
-
+	var book = xmlDoc.getElementsByTagName("book");	
+	for(var i=0; i<book.length; i++){
+	document.getElementById("demo").innerHTML+=
+	xmlDoc.getElementsByTagName("title")[i].childNodes[0].nodeValue+"</br>";
+	}
+	//document.getElementById("demo").innerHTML+=
+	//xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
 }
+
 </script>
 
 </body>
