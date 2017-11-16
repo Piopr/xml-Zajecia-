@@ -1,0 +1,38 @@
+bookstore {display: table;}
+book{
+	background-color: #0086b3;	
+	border: 5px dotted blue;
+	text-align: left;
+	margin-top:3px;
+	width:400px;
+	
+	display:table-row;
+	counter-increment: chapnum;
+}
+book > title:before {
+	content: "Book" counter(chapnum) ": ";
+	
+}
+title{
+	color: white;
+	font-size: 130%;
+	font-weight: bold;
+	display: table-cell;
+	border: solid 3px blue;
+	
+}
+author{
+	font-size: 100%;
+	display:table-cell;	
+	border: solid 3px blue;
+}
+year{
+	font-size: 90%;
+	display:table-cell;
+	border: solid 3px blue;	
+}
+price{
+	font-size: 90%;
+	display:table-cell;	
+	border: solid 3px blue;
+}

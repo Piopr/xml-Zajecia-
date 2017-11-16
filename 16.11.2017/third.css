@@ -1,0 +1,27 @@
+plane{
+		background-color: gray;
+		width: 400px;
+		display: block;
+		margin: 1px;
+}
+plane:first-child{
+		font-size: 150%;
+	
+}
+plane:before{
+	content: "<img src='plane.png' />"
+}
+name {
+	display: block;
+	
+}
+passengers_capacity {
+	display: block;
+}
+travel_range{
+	display: block;
+	
+}
+name[made_in="USA"]{
+	color:green;	
+}

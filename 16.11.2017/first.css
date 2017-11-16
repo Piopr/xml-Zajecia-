@@ -1,0 +1,49 @@
+BusinessCard{
+	background-color:#00bfff;
+	width:400px;
+	display:block;
+	padding:10pt;
+	border: 5px dotted blue;
+	text-align: left;
+	margin-top:3px;
+	float:left;
+	margin-left: 3px;
+	
+}
+name{
+	color:green;
+	font-weight: bold;
+	font-size:30px;
+	margin-bottom: 3%;	
+	display:block;
+	
+	
+}
+phone{
+	color:#900;
+	font-size: 90%;
+	display:block;
+	
+}
+
+email{
+	color:blue;
+	font-size: 90%;
+	font-weight:bold;
+	margin-top:3%;
+	display:block;
+	
+}
+email:before{
+	content: "email: ";
+}
+
+phone:before{content: attr(type) ": "}
+
+phone[primary]:after{
+	content: "(" attr(primary) ") "
+	
+}
+phone[type='mobile']{
+	text-decoration: underline;
+}
