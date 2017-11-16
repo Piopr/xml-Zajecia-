@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    myFunction(this);
+    }
+};
+xhttp.open("GET", "books.xml", true);
+xhttp.send();
+
+function myFunction(xml) {
+    var books = xml.responseXML;
+	
+	var serializer = new XMLSerializer();
+	var xmlString = serializer.serializeToString(books);
+	//alert(xmlString);	
+	
+	var node = books.createElement("bestseller");
+	var content = books.createTextNode("yes");
+	
+	node.appendChild(content);
+	
+	var elements = books.getElementsByTagName("book");
+	elements[0].appendChild(node);
+	
+
+	
+	node=books.createElement("edition");
+	content=books.createTextNode("first");
+	node.appendChild(content);
+	count=elements.length;
+	elements[count-1].appendChild(node);
+	
+	xmlString = serializer.serializeToString(books);
+	//alert(xmlString);
+	
+	var price=books.getElementsByTagName("price");
+	price[0].childNodes[0].nodeValue="1000";
+	
+		xmlString = serializer.serializeToString(books);
+	//alert(xmlString);
+	
+	books.getElementsByTagName("book")[0].setAttribute("category", "food");
+	
+	xmlString = serializer.serializeToString(books);
+	//alert(xmlString);
+	
+	rem = books.getElementsByTagName("book")[0];
+	books.documentElement.removeChild(rem);
+	
+	xmlString = serializer.serializeToString(books);
+	alert(xmlString);
+	
+	
+	
+	
+	
+
+
+}
+</script>
+
+</body>
+</html> 
