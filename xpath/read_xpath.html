@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    myFunction(this);
+    }
+};
+xhttp.open("GET", "books.xml", true);
+xhttp.send();
+
+
+
+function myFunction(xml) {
+	var books = xml.responseXML;
+	var path="/bookstore/book/title";
+	var msg='';
+	
+	var nodes = books.evaluate(path, books, null,XPathResult.ANY_TYPE, null);
+	alert(result);
+	result=nodes.iterateNext();
+	while(result){
+		msg+= result.childNodes[0].nodeValue + "\n";
+		result=nodes.iterateNext();
+	}
+	alert(msg);
+	}
+</script>
+
+
+<div id="result"></div>
+</body>
+</html> 

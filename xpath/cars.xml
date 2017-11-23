@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cars.xslt"?>
+
+<cars>
+	<car category="SUV">
+  		<name>BMW X6</name>
+  		<made_in>Germany</made_in>
+  		<color>white</color>
+  		<photo>http://diecastking.com/tub/bmw-x6-white-1-18-diecast-model-car-by-kyosho-08761w.jpg</photo>
+	</car>
+
+	<car category="sport">
+  		<name>Lamborghini Espada Rosso Granada</name>
+    	<made_in>Italy</made_in>
+  		<color>red</color>
+ 		<photo>http://diecastking.com/tub/lamborghini-espada-rosso-granada-red-1-18-diecast-model-car-by-autoart-aa74503.jpg </photo>
+	</car>
+
+	<car category="sport">
+  		<name>Porsche 356 B Cabriolet 1961</name>
+  		<made_in>Germany</made_in>
+  		<color>black</color>
+ 		<photo>http://diecastking.com/tub/1961-porsche-356-b-cabriolet-black-1-24-diecast-model-car-by-bburago-22078bk.jpg</photo>
+	</car>
+
+	<car category="roadster">
+  		<name>Lamborghini Murcielago Roadster</name>
+  		<made_in>Italy</made_in>
+    	<color>black</color>
+		<photo>http://diecastking.com/tub/lamborghini-murcielago-roadster-black-1-18-diecast-model-car-by-motormax-73169bk.jpg</photo>
+	</car>
+
+
+	<car category="roadster">
+  		<name>Porsche Carrera GT Silver</name>
+  		<made_in>Germany</made_in>
+      	<color>silver</color>
+	<photo>http://diecastking.com/original/porsche-carrera-gt-silver-1-18-diecast-model-car-by-motormax-73163s.jpg</photo>
+	</car>
+
+</cars>
